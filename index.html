@@ -68,7 +68,7 @@ First, we can add a hyperlink to our page by writing:
 The <span> < a > </span> tag is what makes the link clickable, and the <span> href=""</span> is an attribute that tells us the web address of where we are going. The a stands for "anchor"; When you click on it you'll be anchored on another page :_)
 <br>
 
-By default, these are blue, and underlined, but we can customize this using CSS. we can do this by selecting the a tag and changing it's <span>color: </span> and <span>text-decoration: </span>
+By default, these are blue, and underlined, but we can customize this using CSS. We can do this by selecting the a tag and changing it's <span>color: </span> and <span>text-decoration: </span>
 <br>
 <img src="./assets/4.png" width="300px">
 <br>
@@ -78,18 +78,20 @@ By default, these are blue, and underlined, but we can customize this using CSS.
 
 <h3> Changing the Colors of Elements</h3>
 <p>
-	There are several ways to add colors to your page in CSS. We can denote color with hex values, rgba values(red, blue, green, alpha) and hsl values (hue, saturation, lightness. There is also a collection of color keywords, which can be found on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank">mozilla's site.</a> 
+	There are several ways to add colors to your page in CSS. We can denote color with hex values, rgba values(red, blue, green, alpha) and hsl values (hue, saturation, lightness). There are also a collection of color keywords, which can be found on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank">mozilla's site.</a> 
 	<br>
-	I often use <a href="https://color.hailpixel.com/" target="_blank">colordot</a> to get specific hex colors.
-"
+	I often use <a href="https://color.hailpixel.com/" target="_blank">colordot</a> to get specific hex values for colors.
 	</p>
 	<h3>Making Our Hyperlinks Look Like Buttons</h3>
 	<p>
-To make our hyperlinks look like buttons, we're going to give our <span> < a > </span> tag a <span>border:</span> There are a few differnt border types you can choose from, including solid, dotted, and dashed To acheieve a more border-like look, we'll also give it a <span>border-radius:</span> . We can even change the <span> < a > </span> tag's background-color. 
+To make our hyperlinks look like buttons, we're going to give our <span> < a > </span> tag a <span>border:</span> There are a few differnt border types you can choose from, including solid, dotted, and dashed. To acheieve a more button-like look, we'll also give it a <span>border-radius:</span> . We can even change the <span> < a > </span> tag's background-color. 
 <br>
 <br>
 We'll also want to add some margins and padding, so that our text doesn't look cramped inside our boxes. The padding is the space around the element itself and the margin is the space between the element and other elements. We can think of it like a framed picture. The mat containing the image is the padding, and the frame is the margin. 
 <br>
+Your link button CSS might look something like this:
+<br>
+<img src="./assets/21.png" width="400px">
 <br>
 
 We could also make these links look like buttons with this old school HTML tag, <button> button</button> (<span>< button ></span>)
@@ -102,7 +104,7 @@ Similarly, you can select the button tag and style it however you want in CSS.
 	<br>
 	<img src="./assets/12.png" width="600">
 	<br> 
-	Recently I read an article on <a href="https://css-tricks.com/use-target_blank/" target="_blank">css tricks</a> about why using target blank wasn't a good idea because you are changing the default behavior when you could use the back button instead. Personally, I kind of like having a million tabs, and hate having to hit the back button, but this is totally up to you. 
+	Recently, I read an article on <a href="https://css-tricks.com/use-target_blank/" target="_blank">css tricks</a> about why using target blank wasn't a good idea because you are changing the default behavior when you could use the back button instead. Personally, I kind of like having a million tabs, and hate having to hit the back button, but this is totally up to you. 
 
 </p>
 
@@ -117,7 +119,7 @@ In CSS, we can select our class by typing a <span> .</span> followed by the name
 <p>
 We can think of HTML elements as different kinds of boxes that we stack inside of and on top of eachother.
 <br>
-Block elements, such as a div, by default take up the full width of the page with a size dictated by the content, where as inline elements for example a span, only takes up part of the width, and go with the flow of the page. Inline elements don't cause line breaks, where as block elements do. By default, text and images are inline, meaning if you add and image after some text in your HTML without a break, it will go with the flow of the text. We can change the default display of an element in our CSS. This might be a little confusing at first, but don't worry, it'll start to make sense. 
+Block elements, such as a div, by default take up the full width of the page with a size dictated by the content, where as inline elements for example a span, only takes up part of the width, and go with the flow of the page. Inline elements don't cause line breaks, where as block elements do. By default, text and images are inline, meaning if you add and image after some text in your HTML without a break, it will go with the flow of the text. We can change the default display of an element in our CSS to inline, block or inline-block. This might be a little confusing at first, but don't worry, it'll start to make sense. 
 <a href="https://htmlreference.io/" target="_blank"> This page</a> is a good reference if you're not sure whether an HTML element is inline or block.
 <br>
 <br>
@@ -141,9 +143,9 @@ Flexbox was added to CSS in 2013, and it's a pretty amazing tool for making the 
 <br> 
 We'll want to give our div container a <span>display:flex;</span>
 <br> 
-Then we'll want to specify the <span>flex-direction: column;</span> and <span>justify-content: center;</span> We want to set the <span>align-items: stretch</span>
+Then we'll want to specify the <span>flex-direction: column;</span> and <span>justify-content: center;</span> We want to set the <span>align-items: stretch;</span>
 <br>
-Your css should looks something like this:
+Your CSS should looks something like this:
 <br>
 <img src="./assets/17.png" width="400px">
 <br> 
@@ -158,7 +160,7 @@ We can add font files to our sites by using the <span>@font-face</span> rule. We
 <br>
 <img src="./assets/5.png" width="400px">
 <br>
-<a href="https://velvetyne.fr/" target="_blank"> velvetyne </a> is a great place to find funky free fonts.
+<a href="https://velvetyne.fr/" target="_blank"> Velvetyne </a> is a great place to find funky free fonts.
 <br>
 <br>
 After we add a font to our page, we can select an HTML tag and give it a <span> font-family:</span>
@@ -212,7 +214,7 @@ This means that our image will resize it's self based on the browser size<br>
 
 <h1> Customizing Your Background</h1>
 <p>
-	We can add a background color to our site by selecting the body tag in our css and adding a <span>background-color:</span>.
+	We can add a background color to our site by selecting the body tag in our CSS and adding a <span>background-color:</span>.
 	<br>
 	<img src="./assets/6.png" width="400px">
 	<br>
@@ -230,9 +232,9 @@ This means that our image will resize it's self based on the browser size<br>
 		<img src="./assets/8.png" width="600px">
 		<br>
 		<br>
-		Conversly, you could write <span> background-repeat: repeat; </span> if you're going for the checkered look. You can also adjust the width and height of the image. to change the size of these checkers.
+		Conversly, you could write <span> background-repeat: repeat; </span> if you're going for the checkered look. You can also adjust the width and height of the image to change the size of these checkers.
 		<br>
-		We also might want to set the background size to cover, so it covers the whole height and width of our page.
+		We also might want to set the <span>background-size</span> to cover, so it covers the whole height and width of our page on any viewport.
 		<br>
 		<img src="./assets/7.png" width="600px">
 	</p>
@@ -270,6 +272,7 @@ We'll set the color on hover to transparent, which will create a blurry, glassy 
 The first two values are the x & y offset, and the third value is the the blur radius, and the last value is the color. 
 <br>
 You can find more info on <span> text-shadow:</span> here.
+<br>
 <br>
 Here are some additional resources for cool things you can do in CSS:
 <br>
