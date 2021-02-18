@@ -1,0 +1,34 @@
+h1, h2{
+	font-family: "hadogenes";
+	color: white;
+}
+
+p{
+	font-family: helvetica;
+
+}
+
+body{
+	background-color: pink;
+	font-family: helvetica;
+
+}
+
+img{
+	display: inline-block;
+	max-width: 100%;
+	padding: 2px;
+	margin: 4px;
+}
+
+span{
+	color: orange;
+	background-color: black;
+	font-family: monospace;
+}
+
+.avatar{
+	text-align: center;
+}
+
+

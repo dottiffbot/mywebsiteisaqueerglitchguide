@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wee</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script type="text/javascript" src="script.js"></script>
+<body>
+	<section>
+
+	<h1> What is a Website Anyway? </h1>
+	<br>
+	<div class="avatar">
+	<img src="./assets/cool.gif">
+</div>
+
+	<p>
+		All websites start with an HTML file.
+		HTML stands for hypertext markup language. It is the skeleton of the world wide web! It's kind of like any text document, with it's own specific ruleset on how to lay things out and structure your web page.
+		<br>
+
+		The first HTML tag we have is called the head; This is basically where you give the browser a summary of what your web page is all about. You can add a title in for your page in the head, which will appear on the tab of your page.
+		<br>
+
+		<img src=./assets/10.png>
+
+<br>
+<br>
+Glitch is a tool because it gives you a template with everything you need for your webpage. All the important information you need is already in the head!
+<br>
+ We can customize our webpage by adding styles, (CSS, Casading Style Sheet) and interaction (Javascript.)
+ CSS is like the skin of a website and Javascript is like it's muscles. I won't really be covering Javascript in this workshop, but feel free to use it on your own link tree if you're comfortable.
+ <br>
+<br>
+ If we were building our site locally, we would link to the CSS file in the head and the Javascript file right before or after the body tag. The <span> < body > </span> tag contains the guts of our webpage <3
+ <br>
+ <br>
+  You don't even necessarily need to link to a separate document though! If you prefer you can write css styles inline or have a separate <span>< style > </span> tag that contains all the styles. I like to make a separate style sheet because it's just easier to look at. A note, the pictures I've included have the css wrapped in <span> < style > </span> because I chose to write them that way for the exercise. If you're linking a separate css file, you only need the code that starts with the tag and has curly brackets. 
+<br>
+ 
+		</p>
+	</section>
+<section>
+		<h1> the hyperlink </h1>
+
+		<p>
+At the core of any link tree is, of course, the hyperlink.
+<br>
+On link trees, these links or buttons appear to be 3D squares, but we can make them look any way we want, and we can even put them where we want on the page. There are a few different ways to do this.
+<br>
+<br>
+First, we can add a hyperlink by writing:
+<br>
+<img src="./assets/2.png">
+<br>
+
+<a href="myspecialzoneontheweb.com" target="_blank"> welcome to my page!</a>
+
+<br>
+<br>
+
+the <span> < a > </span> tag is what makes the link clickable, and the <span> href=""</span> tells us the web address of where we are going.
+<br>
+
+By default, these are blue, and underlined, but we can customize this using CSS. we can do this by selecting the a tag and changing it's <span>color: </span> and <span>text-decoration: </span>
+<br>
+<img src="./assets/4.png">
+<br>
+& now we have a pink link !!
+<br>
+<br>
+
+<h3> changing the colors of elements</h3>
+<p>
+	There are several ways to add colors to your page in css. We can denote color with hex values, rgba values, where a stands for the alpha channel, or opacity. There is also a collection of color keywords, which can be found on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">mozilla's site.</a> 
+	<br>
+	I often use <a href="https://color.hailpixel.com/">colordot</a> to get specific hex colors.
+
+	</p>
+	<h3>making our hyperlinks look like buttons</h3>
+	<p>
+To make our hyperlinks look like buttons, we're going to give our <span> < a > </span> tag a <span>border:</span> There are a few differnt border types you can choose from, including solid, dotted, and dashed To acheieve a more border-like look, we'll also give it a <span>border-radius:</span> . We can even change the <span> < a > </span> tag's background-color. We'll also want to add some margins and padding.
+<br>
+<br>
+
+We could also make these links look like buttons with this old school html tag, <button> button</button>
+Similarly, you can select the button tag and style it however you want in css. 
+</p>
+<h2> hot take on target blank </h2>
+
+<p>
+	It's possible that you might want to keep people on your page instead of sending them to an entirely new page. In this case, we can add<span> target = "_blank "</span> to our HTML tag. 
+	<br>
+	<img src="./assets/12.png">
+	<br> 
+	Recently I read an article on <a href="https://css-tricks.com/use-target_blank/">css tricks</a> about why using target blank wasn't a good idea because you are changing the default behavior when you could use the back button instead. Personally, I kind of like having a million tabs, and hate having to hit the back button, but this is totally up to you. 
+
+</p>
+
+<h2> getting more specific with class and id</h2>
+<br>
+Perhaps we might want to make only some links pink, and the other ones green. We can do this a few different ways by being more specific in the way we write our html. We can do this by adding a <span>class="" </span> or an <span>id=""</span> to our <span> < a > </span> tag. 
+By adding a class, we can style multiple elements that belong to that same class in the same way. 
+Giving a tag an id is specific to only that one element, and can override anything in the class. 
+
+<h2> inline & block elements</h2>
+<p>
+We can think of HTML elements as different kinds of boxes that we stack inside of and on top of eachother.
+<br>
+Block elements, such as a div, by default take up the full width of the page with a size dictated by the content, where as inline elements for example a span, only takes up part of the width, and go with the flow of the page. inline elements don't cause line breaks, where as block elements do.  This might be a little confusing at first, but don't worry, it'll start to make sense. 
+<a href="https://htmlreference.io/"> This page</a> is a good reference if you're not sure whether an HTML element is inline or block.
+<br>
+Our links by default are inline, but we're actually going to change them to be block elements, so each link is on it's own line. We can do that by saying:
+<br>
+
+<style type="text/css">
+
+a{
+	display: block;
+}
+
+</style>
+
+
+<h2> styling the layout so that it's responsive</h2>
+<p>
+	<br>
+We're going to want to put all of our links inside of a <span> < div ></span>
+<br>
+Then we'll want to give our div container a <span>display:flex;</span>
+<br>
+flexbox was added to css in 2013, and it's a pretty amazing tool for making the content on our pages responsive. Here is a <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">complete guide to flexbox</a>
+	</p>
+</section>
+
+<section>
+<h1> adding custom fonts </h1>
+<p>
+we can add font files to our sites by using the <span>@font-face</span> rule. 
+<br>
+<img src="./assets/5.png">
+<br>
+<a href="https://velvetyne.fr/"> velvetyne is a great place to find funky free fonts</a>
+<br>
+<br>
+After we add a font to our page, we can select an HTML tag and give it a <span> font-family:</span>
+This HTML element could be the body if you want the whole page to have the same font. You could also select tags invivdually like <span>< h1 ></span>, <span> < p > </span>, or <span> < a > </span>
+<br>
+</p>
+</section>
+
+<section>
+<h1> adding images </h1>
+<p>
+
+to add an image in html, all you have to do is write:
+<br>
+
+<img src="./assets/3.png">
+<br>
+
+It's self contained and you don't need to close the tag.
+<br>
+
+In the quotes, you link to the image, so in our case we have a folder called assets that we can drop images into and then it gives us the option to copy that link and insert it in the quotes. 
+
+<br>
+
+I usually just change the image width inline by adding width and the number of pixels, but you can specify in the css as well. if you just put a width, the height is usually automatic.
+<br>
+
+<h3>Don't forget the alt text...</h3>
+<br>
+Inside our image elements, we need to add alt text so that they can be read by screen readers and are accessible to users who are low vision or blind. 
+<br>
+This is an image description of my avatar on my link tree. It's nice to paint the pictures with words too.
+<br>
+<img src="./assets/16.png">
+
+
+Images are by default inline, and treated like text. We can easily center our image by putting it into a div and then saying:
+
+<img src="./assets/11.png">
+
+<br>
+
+For responsiveness, we want to set our image <span>display: inline-block</span> and <span>max-width: 100% </span>
+<br>
+This means that our image will resize it's self based on the browser size<br>
+</p>
+
+
+<h1> customizing your background</h1>
+<p>
+	we can add a background color to our site by selecting the body tag in our css and adding a <span>background-color</span>.
+	<br>
+	<img src="./assets/6.png">
+	<br>
+
+</p>
+<h2> adding a background image</h2>
+
+<p>
+ we can add a background image like this:
+	<br>
+	<img src="./assets/9.png">
+	<p>
+		If the image isn't large enough to cover the whole width of the screen, by default it will repeat. If you don't want this you can always change the repeat by saying:
+		<br>
+		<img src="./assets/8.png">
+		<br>
+		<br>
+		Conversly, you could write <span> background-repeat: repeat </span> if you're going for the checkered look. 
+		<br>
+		We also might want to set the background size to cover, so it covers the whole height and width of our page.
+		<br>
+		<img src="./assets/7.png">
+	</p>
+
+</p>
+<h2>adding a background gradient</h2>
+<p>
+	Gradients are really hot right now, and pretty simple to add as a background. 
+</p>
+</section>
+<section>
+<h1> hover effects</h1>
+</section>
+<section>
+<h1>extra css tricks!</h1>
+<p>
+	My personal favorite css filter is blur. 
+</p>
+</section>
+
+
+</body>
+</html>
